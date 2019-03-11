@@ -1,0 +1,47 @@
+doctype html
+head
+  meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+  title WishBoard
+  link(rel='stylesheet' type='text/css' media='screen' href='stylesheets/formstyle.css')
+// HEADER
+.wrap
+  #header
+    img(src='images/logo.png' alt='WishBoard')
+    h1
+      | Wish Board
+    h1
+.wrap
+  img(src='\\images\\addwish.png' alt='WishBoard')
+  .divider
+  form.form-2(action="/newwish" method="post" enctype="multipart/form-data")
+    input(name="title" required='' size='80' style='height:40px' tabindex='1' type='text' placeholder='Title')
+    input(name="link" required='' size='80' style='height:40px' tabindex='2' type='url' placeholder='Link')
+    input(name="info" required='' size='80' style='height:40px' tabindex='3' type='text' placeholder='About')
+    input(name="file", type="file")
+    input(type="submit" value="ADD")
+    
+
+// FOOTER
+.wrap
+  #footer
+    .clear
+    .divider
+    .copyright
+      p &copy;2019 Pyzhyk.It's all rights.
+    .social
+      ul
+        li
+          a(href='#' title='facebook')
+            img.social(src='images/social/facebook_32.png' width='32' height='32' alt='facebook' title='facebook')
+        li
+          a(href='#' title='linkedin')
+            img(src='images/social/linkedin_32.png' width='32' height='32' alt='linkedin' title='linkedin')
+        li
+          a(href='#' title='skype')
+            img(src='images/social/youtube_32.png' width='32' height='32' alt='myspace' title='youtube')
+        li
+          a(href='#' title='twitter')
+            img(src='images/social/twitter_32.png' width='32' height='32' alt='twitter' title='twitter')
+        li
+          a(href='#' title='flickr')
+            img(src='images/social/skype_32.png' width='32' height='32' alt='buzz' title='skype')

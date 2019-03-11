@@ -1,0 +1,81 @@
+//- extends layout
+
+doctype html
+head
+  <meta charset="utf-8" />
+  title WishBoard
+  link(rel='stylesheet' type='text/css' media='screen' href='stylesheets/styles.css')
+
+// HEADER
+.wrap
+  #header
+    img(src='images/logo.png' alt='WishBoard')
+    h1
+      | Wish Board
+      h1
+    #z_button
+     a#z_plus(href = "/newwish") +
+
+  a#sort(href=sortlink) #{sorttype}
+  .divider
+  .clear
+      
+
+// CELLS
+.wrap
+  .columns
+    - var n = 1;
+    each wish in wishes
+      if n === 3
+        .column_last
+          .status-bar
+            a.switch(href='/statuschange?id='+wish.id) #{wish.status} 
+            a.delete(href='/delete?id=' + wish.id src)
+              img(src="\\images\\trash.png" width="20" height="25")
+          .clear
+          object(data=wish.file type="image/png" width="200" height="200")
+            img(src="\\images\\defaultimg.png" alt="example" width="200" height="200")
+          h2 #{wish.title}
+          a.link(href=wish.link) #{wish.link}
+          p.info #{wish.info}                 
+        - n = 1
+      else
+        .column
+          .status-bar
+            a.switch(href='/statuschange?id='+ wish.id) #{wish.status}
+            a.delete(href='/delete?id=' + wish.id)
+              img(src="\\images\\trash.png" width="20" height="25")
+          .clear
+          object(data=wish.file type="image/png" width="200" height="200")
+            img(src="\\images\\defaultimg.png" alt="example" width="200" height="200")
+          h2 #{wish.title}
+          a.link(href=wish.link) #{wish.link}         
+          p.info #{wish.info}  
+        - n++
+    else 
+      h3 No wishes here    
+  .divider
+  .clear
+
+// FOOTER
+.wrap
+  #footer
+    .copyright
+      p &copy;2019 Pyzhyk.It's all rights.
+    .social
+      ul
+        li
+          a(href='#' title='facebook')
+            img.social(src='images/social/facebook_32.png' width='32' height='32' alt='facebook' title='facebook')
+        li
+          a(href='#' title='linkedin')
+            img(src='images/social/linkedin_32.png' width='32' height='32' alt='linkedin' title='linkedin')
+        li
+          a(href='#' title='skype')
+            img(src='images/social/youtube_32.png' width='32' height='32' alt='myspace' title='youtube')
+        li
+          a(href='#' title='twitter')
+            img(src='images/social/twitter_32.png' width='32' height='32' alt='twitter' title='twitter')
+        li
+          a(href='#' title='flickr')
+            img(src='images/social/skype_32.png' width='32' height='32' alt='buzz' title='skype')

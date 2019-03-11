@@ -1,0 +1,276 @@
+/* ========================== CSS Reset ========================== */
+* {
+	border: 0 none;	
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/* ========================== General Styles ========================== */
+body {
+	background: url("../images/body_bg.png") repeat 50% 0%;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 965px;
+}
+
+a {
+	/* text-decoration: none; */
+	color: #b0b2b3;
+}
+
+p, li {
+	color: #b0b2b3;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+
+h1, h2, h3, h4 {
+    font-family:"Nevis",sans-serif;
+}
+
+h1 {
+    color: #eff0f1;
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 26px;
+	color: #eff0f1;
+}
+
+h3 {
+	font-size: 22px;
+	color: #eff0f1;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px #222;
+}
+
+h4 {
+	font-size: 18px;
+	color: #eff0f1;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px #222;
+}
+
+
+img.left {
+	margin-right: 15px;
+}
+
+img.right {
+	margin-left: 15px;
+}
+
+ul {
+	list-style: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+}
+
+.divider {
+	background: url("../images/divider.png") repeat-x top left;
+	height: 3px;
+	margin-left:0 auto;
+	margin-right:0 auto;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.divider_bottom {
+	background: url("../images/divider.png") repeat-x top left;
+	height: 3px;
+	margin-left:0 auto;
+	margin-right:0 auto;
+	margin-bottom:20px;
+}
+
+.left {
+    float:left;
+}
+
+/* ============= buttons ==================  */
+
+.columns a.more_button {
+    font-size:12px;
+    display: block;
+    text-align:center;
+    background:url("../images/more_button.png") no-repeat;
+    width:100px;
+    height:30px;
+    padding:8px 0 0;
+    color:#fff;
+    text-shadow:0 1px 1px #4d4f55;
+}
+
+.columns a.more_button:hover {
+	text-decoration: none;
+}
+
+
+/* ========================== Header Styles ========================== */
+#header {
+	height: 64px;
+	padding-top: 40px;
+}
+
+#header img, #header h1 {
+	float: left;
+}
+  
+  #z_button a{
+	background-color: #d44949;
+	height: 50px;
+	position: static;
+	outline: 0;
+	display: block;
+	margin: 0px 0px 0px 0px;
+	color: #fff;
+	border-radius: 100%;
+	width: 50px;
+	float: right;
+  }
+  
+  #z_button a:hover {
+	background-color: #883030;
+  }
+    
+  #z_plus{
+	text-align: center;
+	line-height: 50px;
+	font-size: 30px;
+	text-decoration: none;	
+  }
+
+  #sort {
+	text-decoration: none;
+	float: right;
+  }
+
+  #sort:hover {
+	color: #883030;
+  }
+  
+/* ========================== columns Styles ========================== */
+.columns {
+    width:925px;
+	overflow: hidden;
+}
+
+.columns .column_last {
+	margin-right: 0;
+	padding-right: 0;
+	float: right;
+	width: 295px;
+	padding-top: 4px;
+}
+
+.columns .column {
+	float: left;
+	margin-right: 20px;
+	padding-top: 4px;
+	width: 295px;
+	margin-left:0;
+}
+
+.columns p {
+	margin-bottom: 15px;
+}
+
+.column p, .column_last p {
+    color:#b0b2b3;
+}
+
+.link{
+	color:#b64141;
+	font-style: italic;
+	font-size: 18px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 200px;
+	height: 18px;;
+	white-space: nowrap;
+	display: block;
+}
+
+.status-bar {
+	position: relative;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+.switch {
+	background-color: #d44949;
+
+	
+	/* margin: 5px; */
+	padding: 5px;
+	color: #fff;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+.delete {
+	float: right;
+}
+
+.info{
+	font-size: 20px;
+	word-wrap: break-word;
+}
+
+/* ========================== Footer Styles ========================== */
+#footer {	
+	padding: 0;
+	margin-bottom:20px;
+}
+
+#footer p {
+	color: #b0b2b3;
+}
+#footer a {
+    color:#2c82c3;
+}
+
+
+.footer_area .copyright {
+    float:left;
+}
+
+.footer_area .copyright p {
+    line-height:1.5em;
+}
+
+/*--- Social ---- */
+
+.social {
+    float:right;
+}
+
+.social ul {
+    list-style:none;
+}
+
+.social ul li {
+    float:left;
+    margin-left:10px;
+}
